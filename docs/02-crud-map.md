@@ -8,7 +8,7 @@
 | Room | ✓ | ✓ | ✓ | — | rooms-list, room-form | Admin: all. Instructor: read assigned room details. |
 | Student | ✓ | ✓ | ✓ | — | students-list, student-form | Admin: all. Student: scan their existing barcode. |
 | Schedule | ✓ | ✓ | ✓ | — | schedules-list, schedule-form | Admin: all. Instructor: read assigned schedules. |
-| Attendance_Log | ✓ | ✓ | — | — | Student: create by scanning. Instructor: read assigned schedules. Admin: read reports. |
+| Attendance_Log | ✓ | ✓ | — | — | scan-page, attendance-report | Student: create by scanning. Instructor: read assigned schedules. Admin: read reports. |
 
 Attendance_Log records are never deleted in the app so scan history is preserved. Corrections would need a separate audited process in a later phase.
 

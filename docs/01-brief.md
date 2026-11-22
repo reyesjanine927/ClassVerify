@@ -19,7 +19,6 @@ Database name: ClassVerify, Tables: 5
 |                  Room stores room numbers and building names.                           |
 |             Schedule links a subject and start time to a room and instructor.           |
 |Attendance_Log links a student to a schedule and stores scan time, photo URL, and status.|
-|-----------------------------------------------------------------------------------------|
 
 ## 4. Must-have features (for the final project)
 List 4–6. Each one should start with a verb: "Add...", "Search...", "Approve..."

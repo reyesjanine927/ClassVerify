@@ -11,7 +11,6 @@ Manual roll call takes time from class. Paper and spreadsheet records are diffic
 | Administrator | Maintain student, instructor, room, and schedule records, and review attendance summaries |
 
 ## 3. The database behind it
-|-----------------------------------------------------------------------------------------|
 |Student stores each student's ID, unique existing barcode, name, and section.            |
 |Instructor stores instructor IDs and names.                                              |
 |Room stores room numbers and building names.                                             |

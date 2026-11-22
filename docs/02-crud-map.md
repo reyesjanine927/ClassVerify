@@ -26,8 +26,8 @@ Attendance_Log records are never deleted in the app so scan history is preserved
 * Schedule_ID (VARCHAR(20), primary key) → `<input type="text" maxlength="20">` → Required.
 * Subject_Code (VARCHAR(50), not null) → `<input type="text" maxlength="50">` → Required.
 * Time_Start (TIME, not null) → `<input type="time">` → Required.
-* Room_No (foreign key) → <select> populated from Room → Choose a room. The project business rule expects one room, though the current SQL column allows NULL.
-* Instructor_ID (foreign key) → <select> populated from Instructor → Choose an instructor. The project business rule expects one instructor, though the current SQL column allows NULL.
+* Room_No (foreign key) → `<select>` populated from Room → Choose a room. The project business rule expects one room, though the current SQL column allows NULL.
+* Instructor_ID (foreign key) → `<select>` populated from Instructor → Choose an instructor. The project business rule expects one instructor, though the current SQL column allows NULL.
 
 ## 3. Schema Changes
 

@@ -15,13 +15,9 @@ Database name, number of tables, and one sentence per table.
 Database name: ClassVerify, Tables: 5
 |-----------------------------------------------------------------------------------------|
 |              Student stores student IDs, barcodes, names, and sections.                 |
-|-----------------------------------------------------------------------------------------|
 |                  Instructor stores instructor IDs and names.                            |
-|-----------------------------------------------------------------------------------------|
 |                  Room stores room numbers and building names.                           |
-|-----------------------------------------------------------------------------------------|
 |             Schedule links a subject and start time to a room and instructor.           |
-|-----------------------------------------------------------------------------------------|
 |Attendance_Log links a student to a schedule and stores scan time, photo URL, and status.|
 |-----------------------------------------------------------------------------------------|
 

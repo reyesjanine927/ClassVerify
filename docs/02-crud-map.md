@@ -10,8 +10,7 @@
 | Schedule | ✓ | ✓ | ✓ | — | schedules-list, schedule-form | Admin: all. Instructor: read assigned schedules. |
 | Attendance_Log | ✓ | ✓ | — | — | Schedule session / barcode check-in, attendance report. Link table; no separate log-entry form. | Student: create by scanning. Instructor: read assigned schedules. Admin: read reports. |
 
-* Attendance_Log records are never deleted in the app so scan history is preserved. Corrections would need a separate audited process in a later phase.
-*Attendance_Log is the link table between Student and Schedule. The barcode check-in creates its row inside the active schedule flow, and instructors or administrators review it in the attendance report.
+* Attendance_Log records are never deleted in the app so scan history is preserved. Corrections would need a separate audited process in a later phase. Attendance_Log is the link table between Student and Schedule. The barcode check-in creates its row inside the active schedule flow, and instructors or administrators review it in the attendance report.
 
 ## 2. Form Fields for Main Tables
 

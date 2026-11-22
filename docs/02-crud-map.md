@@ -15,14 +15,14 @@ Attendance_Log records are never deleted in the app so scan history is preserved
 ## 2. Form Fields for Main Tables
 
 | Table 1: Student (Add Student Form) |
-| --- || --- || --- |
+| ---- |
 | Student_ID (VARCHAR(20), primary key) | <input type="text" maxlength="20"> | Required. |
 | Barcode (VARCHAR(50), unique, not null) | <input type="text" maxlength="50"> | Required. Scanner-compatible; use the barcode already printed on the school ID. |
 | Student_Name (VARCHAR(100), not null) | <input type="text" maxlength="100"> | Required. |
 | Section (VARCHAR(20)) | <input type="text" maxlength="20"> | Optional. |
 
 | Table 2: Schedule (Add Class Schedule Form) |
-| --- || --- || --- |
+| ---- |
 | Schedule_ID (VARCHAR(20), primary key) | <input type="text" maxlength="20"> | Required. |
 | Subject_Code (VARCHAR(50), not null) | <input type="text" maxlength="50"> | Required. |
 | Time_Start (TIME, not null) | <input type="time"> | Required. |

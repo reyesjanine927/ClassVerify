@@ -8,9 +8,10 @@
 | Room | ✓ | ✓ | ✓ | — | rooms-list, room-form | Admin: all. Instructor: read assigned room details. |
 | Student | ✓ | ✓ | ✓ | — | students-list, student-form | Admin: all. Student: scan their existing barcode. |
 | Schedule | ✓ | ✓ | ✓ | — | schedules-list, schedule-form | Admin: all. Instructor: read assigned schedules. |
-| Attendance_Log | ✓ | ✓ | — | — | scan-page, attendance-report | Student: create by scanning. Instructor: read assigned schedules. Admin: read reports. |
+| Attendance_Log | ✓ | ✓ | — | — | Schedule session / barcode check-in, attendance report. Link table; no separate log-entry form. | Student: create by scanning. Instructor: read assigned schedules. Admin: read reports. |
 
-Attendance_Log records are never deleted in the app so scan history is preserved. Corrections would need a separate audited process in a later phase.
+* Attendance_Log records are never deleted in the app so scan history is preserved. Corrections would need a separate audited process in a later phase.
+*Attendance_Log is the link table between Student and Schedule. The barcode check-in creates its row inside the active schedule flow, and instructors or administrators review it in the attendance report.
 
 ## 2. Form Fields for Main Tables
 
@@ -31,4 +32,4 @@ Attendance_Log records are never deleted in the app so scan history is preserved
 
 ## 3. Schema Changes
 
-None. The map uses the five tables from the database project. The Schedule form will require a room and instructor to follow the project business rules; the current SQL schema still permits those two foreign keys to be NULL.
+None. The map uses the five tables from the database project. The Schedule form will require a room and instructor to follow the project business rules, the current SQL schema still permits those two foreign keys to be NULL.

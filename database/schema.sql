@@ -1,1 +1,10 @@
-Paste the CREATE TABLE statements from your SQL script into the editor. Include the CREATE INDEX statement if you’re keeping it; leave out the INSERT and SELECT statements.
+CREATE TABLE Instructor ( Instructor_ID VARCHAR(20) PRIMARY KEY, Instructor_Name VARCHAR(100) NOT NULL);
+CREATE TABLE Room ( Room_No VARCHAR(20) PRIMARY KEY, Building_Name VARCHAR(50));
+CREATE TABLE Student ( Student_ID VARCHAR(20) PRIMARY KEY, Barcode VARCHAR(50) UNIQUE NOT NULL, Student_Name VARCHAR(100) NOT NULL, Section VARCHAR(20));
+CREATE TABLE Schedule ( Schedule_ID VARCHAR(20) PRIMARY KEY, Subject_Code VARCHAR(50) NOT NULL, Time_Start TIME NOT NULL, Room_No VARCHAR(20), Instructor_ID VARCHAR(20), 
+  FOREIGN KEY (Room_No) REFERENCES Room(Room_No) ON DELETE RESTRICT, FOREIGN KEY (Instructor_ID) REFERENCES Instructor(Instructor_ID) ON DELETE CASCADE);
+CREATE TABLE Attendance_Log ( Log_ID INT AUTO_INCREMENT PRIMARY KEY, Student_ID VARCHAR(20) NOT NULL, Schedule_ID VARCHAR(20) NOT NULL, Scan_Time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  Photo_URL VARCHAR(255) NOT NULL, CHECK (Attendance_Status IN ('Present', 'Late')), FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID) ON DELETE CASCADE,
+  FOREIGN KEY (Schedule_ID) REFERENCES Schedule(Schedule_ID) ON DELETE CASCADE );
+CREATE INDEX idx_attendance_status
+    ON Attendance_Log(Attendance_Status, Schedule_ID);

@@ -1,7 +1,7 @@
 # Project Brief: ClassVerify
 ## 1. The problem
 Who has the problem, and what is hard for them today? (2–3 sentences)
-Manual roll call takes time from class. Paper and spreadsheet records are difficult to update and consolidate. Instructors may also have trouble confirming that a student is physically present.
+* Manual roll call takes time from class. Paper and spreadsheet records are difficult to update and consolidate. Instructors may also have trouble confirming that a student is physically present.
 
 ## 2. Users and what they need to do
 | User role     | What they need to do in the app |

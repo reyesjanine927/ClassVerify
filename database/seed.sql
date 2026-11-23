@@ -4,7 +4,7 @@ INSERT INTO Room (Room_No, Building_Name) VALUES ('IITRM7', 'Institute of Inform
 
 INSERT INTO Student (Student_ID, Barcode, Student_Name, Section) VALUES ('202410440', 'BARCODE-987654321', 'Jimrex Bengoa Lorenzana', 'BSIT-3A');
 -- Janine barcode is set to the school ID value she provided; replace it if the card encodes a different value.
-INSERT INTO Student (Student_ID, Barcode, Student_Name, Section) VALUES ('202410491', '202410491', 'Ma. Janine P. Reyes', NULL);
+INSERT INTO Student (Student_ID, Barcode, Student_Name, Section) VALUES ('202410491', 'BARCODE-987654322', 'Ma. Janine P. Reyes', NULL);
 
 INSERT INTO Schedule (Schedule_ID, Subject_Code, Time_Start, Room_No, Instructor_ID) VALUES ('SCH-1001', 'IM1', '08:00:00', 'IITRM7', 'INS-001');
 
